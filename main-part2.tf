@@ -83,7 +83,7 @@ resource "aws_codepipeline" "terraform_pipeline" {
       configuration = {
         ConnectionArn    = aws_codestarconnections_connection.github.arn
         FullRepositoryId = "Man0sh-r0y/terraform-cicd" # owner/repo format
-        BranchName       = "main"
+        BranchName       = "master"
       }
     }
   }
